@@ -1,0 +1,43 @@
+.users-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    width: 450px;
+    height: 250px;
+    background-color: #fff;
+    box-shadow: 0 8px 16px -8px rgba(0,0,0,0.4);
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    margin: 1.5rem;
+    display: flex;
+    
+}
+.card__image-section{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(#dE685E, #EE786E);
+}
+.card__image-section img {    
+    height: auto;
+    max-width: 100%;
+}
+.card__info-section{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.card__info-name{
+    word-break: break-all;
+    font-size:1.5rem;
+}
+.card__info-type{
+
+}
+.card__info-score{
+
+}

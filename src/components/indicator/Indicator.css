@@ -1,0 +1,38 @@
+.indicator{
+    height:40px;
+    width:10px;
+    margin: auto;
+    position:relative;
+    animation: loading 2000ms 300ms infinite ease-out;
+}
+.indicator::after{
+    content:" ";
+    position:absolute;
+    height:40px;
+    width:10px;
+    top:0;
+    bottom: 0;
+    left: 20px;
+    animation: loading 2000ms 450ms infinite ease-out;
+}
+.indicator::before{
+    content:" ";
+    position:absolute;
+    height:40px;
+    width:10px;
+    top:0;
+    bottom: 0;
+    right: 20px;
+    animation: loading 2000ms 150ms infinite ease-out;
+}
+@keyframes loading {
+    0% {
+      background: #dde2e7;
+    }
+    10% {
+      background: #6b9dc8;
+    }
+    40% {
+      background: #dde2e7;
+    }
+  }
