@@ -1,5 +1,5 @@
 import { Octokit } from "octokit";
-const AUTH_PERSONAL_KEY = "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";
+const AUTH_PERSONAL_KEY = "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";
 export const fetchUsers = async (query) => {
   const octokit = new Octokit({
     auth: AUTH_PERSONAL_KEY,
@@ -11,5 +11,6 @@ export const fetchUsers = async (query) => {
       accept: "application/vnd.github+json",
     },
   });
+  console.log(users.data);
   return users.data.items;
 };
