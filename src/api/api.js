@@ -11,6 +11,5 @@ export const fetchUsers = async (query) => {
       accept: "application/vnd.github+json",
     },
   });
-  console.log(users.data);
   return users.data.items;
 };
